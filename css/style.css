@@ -79,3 +79,175 @@ body {
 
     font-size: 14px;
 }
+
+/* =========================
+   WINDOW
+========================= */
+
+.window {
+    position: absolute;
+
+    top: 100px;
+    left: 150px;
+
+    width: 500px;
+    height: 350px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Window Header */
+
+.window-header {
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10px;
+
+    background: #222;
+    color: white;
+
+    cursor: grab;
+}
+
+
+/* Window Title */
+
+.window-title {
+    font-size: 14px;
+}
+
+
+/* Window Controls */
+
+.window-controls {
+    display: flex;
+}
+
+.window-controls button {
+    width: 35px;
+    height: 30px;
+
+    border: none;
+
+    background: transparent;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* Window Content */
+
+.window-content {
+    padding: 20px;
+
+    color: #222;
+}
+
+#taskbar button{
+    height: 40px;
+    min-width: 100px;
+
+    margin-left: 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+
+    cursor: pointer;
+}
+
+#taskbar button:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+/* =========================
+   START MENU
+========================= */
+
+#start-menu {
+    position: absolute;
+
+    bottom: 55px;
+    left: 10px;
+
+    width: 280px;
+
+    padding: 15px;
+
+    background: #222;
+    color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    display: none;
+}
+
+
+/* Search */
+
+#start-search input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 6px;
+
+    outline: none;
+}
+
+
+/* App list */
+
+#app-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin-top: 10px;
+}
+
+
+/* App buttons */
+
+.app-item {
+    width: 100%;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: transparent;
+    color: white;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.app-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

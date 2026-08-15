@@ -4,25 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiniOS</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
     <main id="desktop">
+
+       
 
     </main>
 
-    <footer id="taskbar">
-        <button id="start-btn">⊞</button>
-        <div id="taskbar-apps">
 
+    <footer id="taskbar">
+
+        <div id="start-menu">
+
+    <div id="start-search">
+        <input
+            type="text"
+            placeholder="Search apps..."
+        >
+    </div>
+
+    <div id="app-list">
+
+        <button class="app-item" id="calculator-app">
+            🧮 Calculator
+        </button>
+
+        <button class="app-item">
+            📝 Notepad
+        </button>
+
+        <button class="app-item">
+            📁 File Manager
+        </button>
+
+        <button class="app-item">
+            ⚙️ Settings
+        </button>
+
+    </div>
+
+</div>
+
+<button id="start-btn">⊞</button>
+
+        <div id="taskbar-apps">
         </div>
+
         <div id="system-tray">
             <span id="clock">00:00</span>
         </div>
+
     </footer>
 
 
-
+    <script src="js/windowManager.js"></script>
+    <script src="js/appManager.js"></script>
+    <script src="js/apps/calculator.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 </html>
